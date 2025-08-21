@@ -25,7 +25,7 @@ close all
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Read in datasets
 %Demo dataset provided: Subset of Sluijs et al., 2011. doi:10.5194/cp-7-47-2011 
-ancient=csvread('Demo.csv',1,0); %If your csv does not contain a header row, remove ,1,0 leaving only the filename (in single quotes) in the parentheses
+ancient=csvread('raw_coretop_fGDGTs.csv',1,0); %If your csv does not contain a header row, remove ,1,0 leaving only the filename (in single quotes) in the parentheses
 
 %Choose which modern calibration dataset you will use - Op1, Op2, or Op3.
 %CalibrationOp=1 [Recommended] as per Eley et al. 2019; Climates of the Past Discussions doi.org/10.5194/cp-2019-60. This combines the full core-top data of Tierney & Tingley (2015) doi.org/10.1038/sdata.2015.29 with additional data from Seki et al. (2014) doi.org/10.1016/j.pocean.2014.04.013.
@@ -34,7 +34,7 @@ ancient=csvread('Demo.csv',1,0); %If your csv does not contain a header row, rem
 CalibrationOp=1; % CalibrationOp must = 1, 2, or 3.
 
 %Set filenames for outputs
-OPTiMAL_Results='OPTiMAL_Demo.csv'; % csv file containing original GDGT data plus Nearest Neighbour distance, SST prediction, and 1 StDev
+OPTiMAL_Results='OPTiMAL_raw_coretop.csv'; % csv file containing original GDGT data plus Nearest Neighbour distance, SST prediction, and 1 StDev
 Plot1='OPTiMALNearestNeighbour_Demo.png'; % Plot of 1 St Dev for temperature predictions vs. nearest neighbour distances for ancient dataset
 Plot2='OPTiMALReconstructedSST_Demo.png'; % Plot of Reconstructed SST (+ 1StDev) vs. Sample Number (row) for the ancient dataset
 

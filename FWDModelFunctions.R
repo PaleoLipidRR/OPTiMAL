@@ -12,7 +12,7 @@
 ### This code is based on Python 3.6.
 
 ### Point to your Python distribution
-Sys.setenv(RETICULATE_PYTHON = "C:\\Anaconda3\\python.exe")
+Sys.setenv(RETICULATE_PYTHON = "/home/ronnie-rattan/miniforge3/bin/python")
 
 require(reticulate)
 
