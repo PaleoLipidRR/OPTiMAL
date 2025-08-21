@@ -28,7 +28,7 @@ weightsAndNodes <- read.csv("ghWeightsNodes.csv")[,2:3]
 fitFWD <- function(){
   
     message('Loading MOGP model object based on all 6 GDGTs')
-    mf <- np$load('mf6.npy')[[1]]
+    mf <- np$load('mf6.npy', allow_pickle = TRUE)[[1]]
   
   return(mf)
   
