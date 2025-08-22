@@ -90,4 +90,4 @@ Plot_FWD <- ggplot() +
   ylim(-10, 60)
 
 print(Plot_FWD)
-dev.print(png, file=OutputFilename2, width=600)
+ggsave(png, file=OutputFilename2, width=6,dpi=100)

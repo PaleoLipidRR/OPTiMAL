@@ -12,7 +12,7 @@
 ### This code is based on Python 3.6.
 
 ### Point to your Python distribution
-Sys.setenv(RETICULATE_PYTHON = "/home/ronnie-rattan/miniforge3/bin/python")
+Sys.setenv(RETICULATE_PYTHON = Sys.which("python3"))
 
 require(reticulate)
 
