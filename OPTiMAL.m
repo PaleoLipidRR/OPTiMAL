@@ -34,7 +34,7 @@ ancient=csvread('culmeso_fgdgts.csv',1,0); %If your csv does not contain a heade
 CalibrationOp=1; % CalibrationOp must = 1, 2, or 3.
 
 %Set filenames for outputs
-OPTiMAL_Results='OPTiMAL_culmeso.csv'; % csv file containing original GDGT data plus Nearest Neighbour distance, SST prediction, and 1 StDev
+OPTiMAL_Results='OPTiMAL_culmeso_v2.csv'; % csv file containing original GDGT data plus Nearest Neighbour distance, SST prediction, and 1 StDev
 Plot1='OPTiMALNearestNeighbour_Demo.png'; % Plot of 1 St Dev for temperature predictions vs. nearest neighbour distances for ancient dataset
 Plot2='OPTiMALReconstructedSST_Demo.png'; % Plot of Reconstructed SST (+ 1StDev) vs. Sample Number (row) for the ancient dataset
 
